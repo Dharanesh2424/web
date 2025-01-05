@@ -1,0 +1,157 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    background-color: #f3f4f6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #4f46e5;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-logo {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-btn {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: white;
+    color: #4f46e5;
+}
+
+/* Courses Grid */
+.courses-grid {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.course-card {
+    background: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-4px);
+}
+
+.course-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.course-content {
+    padding: 1.5rem;
+}
+
+.course-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.course-description {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.course-meta {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: #4f46e5;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #4338ca;
+}
+
+/* Course Detail */
+.course-detail {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
+.course-info {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
